@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './component/Home/Navbar';
+import Home from './component/Home';
+import Dashboard from './component/Home/Dashboard';
+import Footer from './component/Home/Footer';
+import Drawer from './component/Home/Drawer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Navbar /> */}
+      <Drawer />
+      <h1>Welcome to payment gateway..!</h1>
+      <Home />
+      <Dashboard />
+      <Footer />
     </div>
   );
 }
